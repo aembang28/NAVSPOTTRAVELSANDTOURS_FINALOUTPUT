@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F1F8F6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#52665E"
+                android:text="@string/back_button"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Payment Checkout"
+                android:textColor="#087F5B"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Booking Summary Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booking Summary"
+                android:textColor="#087F5B"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/destinationSummary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Destination: Boracay Island (Aklan)"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/customerSummary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Customer: Traveler (traveler@app.com)"
+                android:textColor="#555555"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/priceSummary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Total Amount: ₱5,000.00"
+                android:textColor="#28A745"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Payment Form Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booking Quantity &amp; Payment"
+                android:textColor="#087F5B"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of Tickets / Guests (Max Limit: 100):"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/ticketQuantityInput"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="14dp"
+                android:backgroundTint="#087F5B"
+                android:hint="Enter Number of Guests (1 - 100)"
+                android:inputType="number"
+                android:text="1"
+                android:padding="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Payment Method:"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:layout_marginBottom="6dp" />
+
+            <Spinner
+                android:id="@+id/paymentMethodSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="16dp"
+                android:background="#EFEFEF"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/accountNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="14dp"
+                android:backgroundTint="#087F5B"
+                android:hint="Account / Cardholder Name"
+                android:inputType="textPersonName"
+                android:padding="12dp" />
+
+            <EditText
+                android:id="@+id/accountNumberInput"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#087F5B"
+                android:hint="Account / Card / Reference Number"
+                android:inputType="number"
+                android:padding="12dp" />
+        </LinearLayout>
+
+        <!-- QR Code Payment Card -->
+        <LinearLayout
+            android:id="@+id/qrCodeCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scan QR Code to Pay"
+                android:textColor="#087F5B"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/qrMethodTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GCash E-Wallet Payment QR"
+                android:textColor="#52665E"
+                android:textSize="14sp"
+                android:layout_marginBottom="12dp" />
+
+            <ImageView
+                android:id="@+id/qrCodeImageView"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:background="#FFFFFF"
+                android:padding="8dp"
+                android:layout_marginBottom="12dp"
+                android:contentDescription="Payment QR Code" />
+
+            <TextView
+                android:id="@+id/qrMerchantName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Merchant: NAVSPOT TRAVELS AND TOURS"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/qrAccountNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account / Ref No: 0917-888-9999"
+                android:textColor="#087F5B"
+                android:textSize="13sp"
+                android:layout_marginTop="2dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/payButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#087F5B"
+            android:text="PAY NOW &amp; CONFIRM"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

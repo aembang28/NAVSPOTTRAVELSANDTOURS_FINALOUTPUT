@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Golden Sand Dune Beach Base -->
+    <path
+        android:fillColor="#FFE082"
+        android:pathData="M18,92 Q54,82 90,92 L90,108 L18,108 Z" />
+
+    <!-- Coconut Tree Trunk (Curved Brown) -->
+    <path
+        android:fillColor="#6D4C41"
+        android:pathData="M52,90 C50,75 46,60 52,48 C55,48 58,49 56,48 C51,60 55,75 57,90 Z" />
+
+    <!-- Trunk Ring Details -->
+    <path
+        android:strokeColor="#4E342E"
+        android:strokeWidth="1.2"
+        android:pathData="M51,80 Q54,78 57,80 M50,70 Q53,68 56,70 M49,60 Q52,58 55,60 M50,52 Q53,50 55,52" />
+
+    <!-- Coconuts (3 Brown Spheres at Crown) -->
+    <path
+        android:fillColor="#3E2723"
+        android:pathData="M51,48 A2.5,2.5 0 1,0 56,48 A2.5,2.5 0 1,0 51,48 Z" />
+    <path
+        android:fillColor="#4E342E"
+        android:pathData="M48,46 A2.5,2.5 0 1,0 53,46 A2.5,2.5 0 1,0 48,46 Z" />
+    <path
+        android:fillColor="#3E2723"
+        android:pathData="M53,45 A2.5,2.5 0 1,0 58,45 A2.5,2.5 0 1,0 53,45 Z" />
+
+    <!-- Coconut Tree Leaves / Fronds (Vibrant Tropical Green) -->
+    <!-- Top Left Leaf -->
+    <path
+        android:fillColor="#2E7D32"
+        android:pathData="M52,46 Q38,32 20,38 Q38,42 52,46 Z" />
+    <!-- Top Right Leaf -->
+    <path
+        android:fillColor="#388E3C"
+        android:pathData="M54,46 Q68,30 86,34 Q68,40 54,46 Z" />
+    <!-- Mid Left Leaf -->
+    <path
+        android:fillColor="#1B5E20"
+        android:pathData="M52,47 Q32,44 16,56 Q36,54 52,47 Z" />
+    <!-- Mid Right Leaf -->
+    <path
+        android:fillColor="#2E7D32"
+        android:pathData="M54,47 Q74,42 92,52 Q72,52 54,47 Z" />
+    <!-- Bottom Left Drooping Leaf -->
+    <path
+        android:fillColor="#388E3C"
+        android:pathData="M52,48 Q36,56 24,70 Q40,64 52,48 Z" />
+    <!-- Bottom Right Drooping Leaf -->
+    <path
+        android:fillColor="#1B5E20"
+        android:pathData="M54,48 Q70,58 82,72 Q68,64 54,48 Z" />
+    <!-- Center Top Canopy Leaf -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M53,45 Q51,24 53,20 Q57,24 53,45 Z" />
+
+</vector>
